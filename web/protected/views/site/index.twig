@@ -1,0 +1,7 @@
+{% extends 'views/layout.twig' %}
+
+{% block body %}
+<p>Пример использования локализации: {{ 'Enter text'|t }}</p>
+<p>Пример использования роутов: {{ _('site/index') }}</p>
+<p>Обращаемся к модели: {{ model.getMessage() }}</p>
+{% endblock %}

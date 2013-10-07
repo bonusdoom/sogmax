@@ -1,0 +1,11 @@
+php_value max_execution_time 0
+php_value max_input_time 600
+php_value upload_max_filesize 2048M
+php_value post_max_size 2048M
+
+php_flag session.upload_progress.enabled On
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php
